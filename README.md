@@ -4,12 +4,13 @@ Copyright 1995-1996 Philippe Paquet
 ### Description
 
 ProTecT is an MS-DOS packer designed to protect executables from analysis.
-
+Dos系统下加壳工具，保护可执行文件对抗分析。
 The protector is written in Turbo Pascal with original comments in French. The stub code and the modules are written in x86 assembly.
-
+Turbo Pascal开发，法语注释，x86汇编语言实现。
 ### It's from 1995! Why should I care?
 
 This packer use a number of interesting techniques that are still relevant today and can be leveraged to defend against analysis:
+加壳工具使用了部分技术，今天看来在对抗分析方面仍旧具有参考意义
 * __Executing code backward__
   * Using the single step mode of the microprocessor, we can adjust the instruction pointer as instructions are executed and run code backward
   * Any analysis tool that also use the single step mode of the microprocessor will interfere with proper execution
